@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Dashboard - DoBu Martial Arts</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="description" content="Access your member dashboard at DoBu Martial Arts. View your profile, upcoming classes, book new classes, and manage your membership.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header navigation (with logout button for logged-in state) -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="DoBu Martial Arts Logo">
+            </a>
+            <button type="button" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="classes.html">Classes</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="pricing.html">Prices</a>
+                <a href="dashboard.html" class="active">Member Dashboard</a>
+                <a href="forum.html">Forum</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button type="button" aria-label="Search">Go</button>
+                </div>
+                <a href="#" class="btn-login" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+
+    <!-- welcome banner -->
+    <section class="dashboard-welcome">
+        <div class="container">
+            <div class="welcome-banner">
+                <div class="welcome-text">
+                    <h1>Welcome back, <span id="memberName">John Doe</span>!</h1>
+                    <span class="membership-badge" id="memberPlan">Intermediate Member</span>
+                </div>
+                <a href="#" class="btn btn-outline" id="editProfileBtn">Edit Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- dashboard content -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- My Profile (Left Column) -->
+                <div class="dashboard-card profile-card">
+                    <h2>My Profile</h2>
+                    <div class="profile-avatar" id="profileAvatar" title="Click to change photo">
+                        <div class="avatar-placeholder" id="avatarPlaceholder">&#128100;</div>
+                        <img id="avatarImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Profile avatar">
+                    </div>
+                    <input type="file" id="avatarInput" accept="image/*" aria-label="Upload profile photo">
+                    <h3 class="profile-name" id="profileName">John Doe</h3>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value" id="profileEmail">john@example.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone</span>
+                            <span class="detail-value" id="profilePhone">Not set</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Plan</span>
+                            <span class="detail-value" id="profilePlan">Intermediate</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Joined</span>
+                            <span class="detail-value">01 Jan 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Expires</span>
+                            <span class="detail-value">01 Jan 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Upcoming Classes  -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>My Upcoming Classes</h2>
+                        <a href="timetable.html" class="view-all-link">View All</a>
+                    </div>
+
+                    <div class="upcoming-classes-list">
+                        <!-- Class 1 -->
+                        <div class="class-booking-item">
+                            <div class="class-info">
+                                <h3>Jiu-jitsu</h3>
+                                <p class="class-date">Mon, 02 Sep 2026</p>
+                                <p class="class-time">19:00 - 21:00</p>
+                            </div>
+                            <button type="button" class="btn-cancel" data-class="jiujitsu">Cancel</button>
+                        </div>
+
+                        <!-- Class 2 -->
+                        <div class="class-booking-item">
+                            <div class="class-info">
+                                <h3>Muay Thai</h3>
+                                <p class="class-date">Tue, 08 Sep 2026</p>
+                                <p class="class-time">17:30 - 19:00</p>
+                            </div>
+                            <button type="button" class="btn-cancel" data-class="muay-thai">Cancel</button>
+                        </div>
+
+                        <!-- Class 3 -->
+                        <div class="class-booking-item">
+                            <div class="class-info">
+                                <h3>Judo</h3>
+                                <p class="class-date">Wed, 09 Sep 2026</p>
+                                <p class="class-time">17:30 - 19:00</p>
+                            </div>
+                            <button type="button" class="btn-cancel" data-class="karate">Cancel</button>
+                        </div>
+
+                        <!-- Class 4 -->
+                        <div class="class-booking-item">
+                            <div class="class-info">
+                                <h3>Karate</h3>
+                                <p class="class-date">Sat, 12 Sep 2026</p>
+                                <p class="class-time">13:00 - 14:30</p>
+                            </div>
+                            <button type="button" class="btn-cancel" data-class="judo">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions & My Benefits  -->
+                <div class="dashboard-column">
+                    <!-- Quick Actions -->
+                    <div class="dashboard-card">
+                        <h2>Quick Actions</h2>
+                        <div class="quick-actions-grid">
+                            <a href="classes.html" class="action-btn">Book a Class</a>
+                            <a href="timetable.html" class="action-btn">View Timetable</a>
+                            <a href="#" class="action-btn" id="updateProfileBtn">Update Profile</a>
+                            <a href="contact.html" class="action-btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <!-- My Benefits -->
+                    <div class="dashboard-card">
+                        <h2>My Benefits</h2>
+                        <ul class="benefits-list">
+                            <li>1 martial art discipline</li>
+                            <li>3 sessions per week</li>
+                            <li>Access to gym & fitness area</li>
+                            <li>Free uniform (first sign-up)</li>
+                            <li>Progress tracking and grading</li>
+                            <li>Member dashboard access</li>
+                            <li>Forum community access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extended Feature Note -->
+            <div class="extended-feature-note">
+                <p><strong>Note:</strong> Member Dashboard is an extended feature not required by the brief. Profile data (including avatar) is stored in your browser's localStorage and persists across page refreshes, but will be lost if you clear browser data or use a different device. Class bookings are static demo data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Martial Way, City Centre<br>London, EC1A 1BB</p>
+                    <p>Phone: 020 1234 5678</p>
+                    <p>Email: info@dobumartialarts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="pricing.html">Prices</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with our community</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">x</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for class updates and special offers.</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required aria-label="Email address for newsletter">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div><div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <!-- edit profile modal -->
+    <div id="editProfileModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Profile</h2>
+                <button type="button" id="closeModalBtn" class="modal-close-btn">&times;</button>
+            </div>
+
+            <!-- Avatar upload -->
+            <div class="modal-avatar-section">
+                <div id="modalAvatarPreview" class="modal-avatar-preview">
+                    <span id="modalAvatarIcon" class="modal-avatar-icon">&#128100;</span>
+                    <img id="modalAvatarImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Avatar preview">
+                </div>
+                <button type="button" id="changePhotoBtn" class="modal-change-photo">Change Photo</button>
+                <input type="file" id="modalAvatarInput" accept="image/*" aria-label="Upload profile photo">
+            </div>
+
+            <!-- Form fields -->
+            <form id="editProfileForm" novalidate>
+                <div class="modal-form-group">
+                    <label for="editFullName">Full Name</label>
+                    <input type="text" id="editFullName" required>
+                    <span id="editNameError" class="modal-form-error">Please enter your full name.</span>
+                </div>
+
+                <div class="modal-form-group">
+                    <label for="editEmail">Email</label>
+                    <input type="email" id="editEmail" required>
+                    <span id="editEmailError" class="modal-form-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="modal-form-group">
+                    <label for="editPhone">Phone (optional)</label>
+                    <input type="tel" id="editPhone">
+                </div>
+
+                <div class="modal-actions">
+                    <button type="submit" class="modal-save-btn">Save Changes</button>
+                    <button type="button" id="cancelEditBtn" class="modal-cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

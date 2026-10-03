@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DoBu Martial Arts</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="description" content="Get in touch with DoBu Martial Arts. Visit our gym, call us, email us, or send a message through our contact form. We're here to help you start your martial arts journey.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="DoBu Martial Arts Logo">
+            </a>
+            <button type="button" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="classes.html">Classes</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="pricing.html">Prices</a>
+                <a href="dashboard.html">Member Dashboard</a>
+                <a href="forum.html">Forum</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button type="button" aria-label="Search">Go</button>
+                </div>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-join">Join Now</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    <!-- page hero -->
+    <section class="page-hero" id="main-content">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have a question or want to start your martial arts journey? Get in touch with us today. Our friendly team is here to help you every step of the way.</p>
+        </div>
+    </section>
+
+    <!-- contact information and form -->
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information Card (Left) -->
+                <div class="contact-info-card">
+                    <h2>Contact Information</h2>
+
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>123 Martial Way, City Centre<br>London, EC1A 1BB</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:02012345678">020 1234 5678</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@dobumartialarts.com">info@dobumartialarts.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Opening Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>06:00 - 21:00</span></li>
+                            <li><span>Saturday</span><span>08:00 - 18:00</span></li>
+                            <li><span>Sunday</span><span>09:00 - 16:00</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">x</a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form  -->
+                <div class="contact-form-card">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible. All fields marked with * are required.</p>
+
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject...</option>
+                                    <option value="general">General Enquiry</option>
+                                    <option value="membership">Membership</option>
+                                    <option value="classes">Classes & Timetable</option>
+                                    <option value="private">Private Tuition</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- google map -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">We're conveniently located in the city centre, easily accessible by public transport and with ample parking nearby.</p>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5!2d-0.12!3d51.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMwJzM2LjAiTiAwwrAwNycwMC4wIlc!5e0!3m2!1sen!2suk!4v1690000000000&hl=en&gl=uk" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="DoBu Martial Arts location map"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- cta banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Start Your Martial Arts Journey?</h2>
+            <p>Join DoBu Martial Arts today and take the first step towards a stronger, more confident you.</p>
+            <a href="signup.html" class="btn btn-primary">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- footer -->    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Martial Way, City Centre<br>London, EC1A 1BB</p>
+                    <p>Phone: 020 1234 5678</p>
+                    <p>Email: info@dobumartialarts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="pricing.html">Prices</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with our community</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">x</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for class updates and special offers.</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required aria-label="Email address for newsletter">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div><div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

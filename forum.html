@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum - DoBu Martial Arts</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="description" content="Join the DoBu Martial Arts community forum. Ask questions, share training tips, find training partners, and connect with fellow martial artists.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="DoBu Martial Arts Logo">
+            </a>
+            <button type="button" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="classes.html">Classes</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="pricing.html">Prices</a>
+                <a href="dashboard.html">Member Dashboard</a>
+                <a href="forum.html" class="active">Forum</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button type="button" aria-label="Search">Go</button>
+                </div>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-join">Join Now</a>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+
+    <!-- page title banner -->
+    <section class="forum-banner">
+        <div class="container">
+            <h1>Community Forum</h1>
+            <p>Ask questions, share training tips, find training partners, and connect with fellow martial artists.</p>
+        </div>
+    </section>
+
+    <!-- forum content -->
+    <section class="forum-section">
+        <div class="container">
+            <div class="forum-grid">
+                <!-- Recent Posts  -->
+                <div class="forum-main">
+                    <div class="forum-header">
+                        <h2>Recent Posts</h2>
+                        <select class="sort-dropdown" id="sortDropdown" aria-label="Sort posts by">
+                            <option value="newest">Sort: Newest</option>
+                            <option value="oldest">Sort: Oldest</option>
+                            <option value="popular">Sort: Most Replies</option>
+                        </select>
+                    </div>
+
+                    <div class="posts-list" id="postsList">
+                        <!-- Posts will be loaded here by JavaScript -->
+                    </div>
+
+                    <button type="button" class="btn btn-outline load-more-btn" id="loadMoreBtn">Load More Posts</button>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="forum-sidebar">
+                    <!-- Create New Post Form  -->
+                    <div class="sidebar-card create-post-card">
+                        <h3>Create New Post</h3>
+                        <form id="createPostForm" novalidate>
+                            <div class="form-group">
+                                <label for="postAuthor">Your Name *</label>
+                                <input type="text" id="postAuthor" name="author" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postTitle">Post Title *</label>
+                                <input type="text" id="postTitle" name="title" placeholder="Enter post title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="postContent">Post Content *</label>
+                                <textarea id="postContent" name="content" rows="5" placeholder="Write your post here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Post to Forum</button>
+
+                            <p class="localstorage-note">Posts saved to your browser localStorage.</p>
+                        </form>
+                    </div>
+
+                    <!-- Forum Statistics -->
+                    <div class="sidebar-card">
+                        <h3>Forum Statistics</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Total Posts:</span>
+                                <span class="stat-value" id="totalPosts">127</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Total Members:</span>
+                                <span class="stat-value" id="totalMembers">48</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Active Now:</span>
+                                <span class="stat-value" id="activeNow">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extended Feature Note  -->
+            <div class="extended-feature-note">
+                <p><strong>Note:</strong> Forum is an extended feature. Posts persist after browser refresh using localStorage, but data is lost when changing devices or clearing browser cache. This is not a mandatory brief requirement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Martial Way, City Centre<br>London, EC1A 1BB</p>
+                    <p>Phone: 020 1234 5678</p>
+                    <p>Email: info@dobumartialarts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="pricing.html">Prices</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with our community</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">x</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for class updates and special offers.</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required aria-label="Email address for newsletter">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div><div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/forum.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - DoBu Martial Arts</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="description" content="Create your account at DoBu Martial Arts. Choose your membership plan and start your martial arts journey today.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- header navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="DoBu Martial Arts Logo">
+            </a>
+            <button type="button" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="classes.html">Classes</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="pricing.html">Prices</a>
+                <a href="dashboard.html">Member Dashboard</a>
+                <a href="forum.html">Forum</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." aria-label="Search">
+                    <button type="button" aria-label="Search">Go</button>
+                </div>
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-join">Join Now</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    <!-- page hero -->
+    <section class="page-hero" id="main-content">
+        <div class="container">
+            <h1>Create Your Account</h1>
+            <p>Join DoBu Martial Arts today and start your martial arts journey. Fill out the form below to create your account.</p>
+        </div>
+    </section>
+
+    <!-- sign up form and why join -->
+    <section>
+        <div class="container">
+            <div class="signup-grid">
+                <!-- Registration Form (Left) -->
+                <div class="signup-form-card">
+                    <h2>Registration Form</h2>
+
+                    <form class="signup-form" id="signupForm" novalidate>
+                        <!-- Error Message Area -->
+                        <div class="form-error-message" id="signupError" role="alert" aria-live="polite"></div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">Password *</label>
+                                <input type="password" id="password" autocomplete="new-password" name="password" placeholder="Enter password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password *</label>
+                                <input type="password" id="confirmPassword" autocomplete="new-password" name="confirmPassword" placeholder="Confirm password" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="membershipPlan">Select Membership Plan *</label>
+                            <select id="membershipPlan" name="membershipPlan" required>
+                                <option value="">Choose a plan...</option>
+                                <option value="basic">Basic - &pound;25/month</option>
+                                <option value="intermediate">Intermediate - &pound;35/month</option>
+                                <option value="advanced">Advanced - &pound;45/month</option>
+                                <option value="elite">Elite - &pound;60/month</option>
+                                <option value="junior">Junior - &pound;25/month</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label" for="terms">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>I agree to the Terms and Conditions and Privacy Policy *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+
+                        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+                    </form>
+                </div>
+
+                <!-- Why Join DoBu (Right) -->
+                <div class="why-join-card">
+                    <h2>Why Join DoBu?</h2>
+
+                    <ul class="benefits-list">
+                        <li>Access to over 30 training sessions per week</li>
+                        <li>Expert instructors with years of experience</li>
+                        <li>Modern training facilities and equipment</li>
+                        <li>Friendly and supportive community</li>
+                        <li>Progress tracking and grading system</li>
+                        <li>Flexible membership options for all goals</li>
+                        <li>Sauna and steam room access (Advanced & Elite)</li>
+                        <li>Fitness gym access (Intermediate, Advanced & Elite)</li>
+                    </ul>
+
+                    <h3>Available Plans</h3>
+                    <div class="plans-summary">
+                        <div class="plan-summary-item">
+                            <span class="plan-name">Basic</span>
+                            <span class="plan-price">&pound;25<span>/mo</span></span>
+                        </div>
+                        <div class="plan-summary-item featured">
+                            <span class="plan-name">Intermediate</span>
+                            <span class="plan-price">&pound;35<span>/mo</span></span>
+                        </div>
+                        <div class="plan-summary-item">
+                            <span class="plan-name">Advanced</span>
+                            <span class="plan-price">&pound;45<span>/mo</span></span>
+                        </div>
+                        <div class="plan-summary-item">
+                            <span class="plan-name">Elite</span>
+                            <span class="plan-price">&pound;60<span>/mo</span></span>
+                        </div>
+                        <div class="plan-summary-item">
+                            <span class="plan-name">Junior</span>
+                            <span class="plan-price">&pound;25<span>/mo</span></span>
+                        </div>
+                    </div>
+
+                    <a href="pricing.html" class="btn btn-outline btn-full">View Full Pricing Details</a>
+                </div>
+            </div>
+
+            <!-- Extended Feature Note-->
+            <div class="extended-feature-note">
+                <p><strong>Note:</strong> Member registration is an extended feature. On success, redirects to Login page. Accounts are stored in browser localStorage and persist across page refreshes, but will be lost when clearing browser data or using a different device. This is not a mandatory brief requirement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Martial Way, City Centre<br>London, EC1A 1BB</p>
+                    <p>Phone: 020 1234 5678</p>
+                    <p>Email: info@dobumartialarts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="pricing.html">Prices</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with our community</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">x</a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">yt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for class updates and special offers.</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required aria-label="Email address for newsletter">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div><div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
